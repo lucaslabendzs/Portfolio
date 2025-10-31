@@ -1,0 +1,150 @@
+/*# sourceMappingURL=style.css.map */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/* ...existing code... */
+.caixa-principal{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    position: relative;       /* necessário para posicionamento absoluto da foto */
+    padding: 40px;
+     background-size: cover;
+   background-position: center;
+}
+
+
+/* corrige a regra inválida e posiciona a imagem à direita */
+.foto-eu {
+   position: absolute;
+   right: 250px;
+   top: 55%;
+   transform: translateY(-50%);
+   border: solid 2px #9b9bee;
+   border-radius: 100%;
+  
+}
+
+.foto-eu img{
+   max-width: 100%;
+   width: 20vw;
+   height: auto;
+   border-radius: 8px;
+  
+}
+
+
+/* em telas pequenas colocamos a imagem abaixo do conteúdo */
+@media (max-width: 700px){
+  .foto-eu{
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transform: none;
+  }
+}
+/* ...existing code... */
+nav{
+    box-shadow: inset 0 -2px 0 rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.Portfolio{
+    color: white;
+    font-weight: 1000px;
+    text-shadow: black 1px 1px 1px;
+    font-size: 50px;
+}
+.Portfolio span{
+    color:#00008B;
+}
+
+li{
+    list-style: none;
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+ 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #0000ca;
+    transition: 1.0s;
+}
+
+.cargo{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+.cargo h1{
+    color: white;
+    font-size: 50px;
+}
+
+.cargo h1 span{
+    color: #00008B;
+}
+
+.cargo h3{
+    color: white;;
+}
+
+.parte2{
+    
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: #181818;
+}
+.parte2 p{
+    padding: 100px 50px;
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+}
+
+.parte2 button{
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #00008B;
+    cursor:pointer;
+    position: absolute;
+    left: 60%;
+    border: none;
+    border: solid 2px #9b9bee;
+}
+.parte2 button:hover{
+    background-color: #0e0e0e;
+    transition: 0.3s;
+    
+}
+.parte2 img{
+    height: 800px;
+    padding: 80px 0px;
+    border-radius: 100%;
+   
+}
+
+.parte2 h2{
+    text-align: center;
+    font-size: 60px;
+}
+.parte2 h2 span{
+    color: #00008B;
+}
