@@ -104,11 +104,12 @@ a:hover {
 }
 
 .parte2{
-    
+    position: relative;
     align-items: center;
     display: flex;
     color: white;
     background-color: #181818;
+   
 }
 .parte2 p{
     padding: 100px 50px;
@@ -147,4 +148,81 @@ a:hover {
 }
 .parte2 h2 span{
     color: #00008B;
+}
+
+.parte3{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: #000000;
+    color:white;
+}
+
+#meus{  
+    text-align: center;
+    font-size: 75px;
+}
+#meus span{
+    color: #00008B;
+}
+
+.FraseInvertida{
+    background-color: #181818;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+   
+}
+.FraseInvertida p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.FraseInvertida h5{
+     font-size: 25px;
+}
+
+.SistemaEventosEstudantis{
+    background-color: #181818;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+   
+}
+.SistemaEventosEstudantis p{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.SistemaEventosEstudantis h5{
+    font-size: 25px;
+}
+
+.projetos{
+    padding-top: 50px;
+    display: flex;
+    
+    justify-content:space-evenly;
+}
+.projetos img{
+    height: 200px;
+    border-radius: 15px;
+}
+.projetos a{
+    
+    background-color: #00008B;
+    padding: 10px;
+    border-radius: 20px;
+    border:none;
+    cursor: pointer;
+    border: solid 2px #9b9bee;
+    font-size: 20px;
+
+}
+.projetos a:hover{
+    background-color:#000000;
+    transition: 0.3s;
+    color: white; 
 }
