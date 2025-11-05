@@ -1,4 +1,10 @@
 /*# sourceMappingURL=style.css.map */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -211,8 +217,6 @@ a:hover {
     border-radius: 15px;
 }
 .projetos a{
-    
-    background-color: #00008B;
     padding: 10px;
     border-radius: 20px;
     border:none;
@@ -225,4 +229,52 @@ a:hover {
     background-color:#000000;
     transition: 0.3s;
     color: white; 
+}
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #181818;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contato{
+    display:flex;
+    gap:20px;
+}
+
+.contato i{
+    border-radius: 50%;
+}
+
+
+footer p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.contato i {
+    padding: 10px 10px;
+    background-color: white;
+    border: solid 2px #9b9bee;  
+    font-size: 30px;
+    color: #00008B;
+    margin: 5px;
+}
+.contato .bx-envelope {
+    color: #00008B; 
+}
+.contato i:hover {
+    background-color: #000000;
+    color: white;
+    transition: 0.9s; 
+}
+.direitos{
+    background-color: #00008B;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
 }
