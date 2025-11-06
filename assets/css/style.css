@@ -1,4 +1,3 @@
-/*# sourceMappingURL=style.css.map */
 html, body {
     height: 100%;
     margin: 0;
@@ -13,19 +12,18 @@ html, body {
    
 }
 
-/* ...existing code... */
+
 .caixa-principal{
     height: 100vh;
     width: 100%;
     background-color: #000000;
-    position: relative;       /* necessário para posicionamento absoluto da foto */
+    position: relative;      
     padding: 40px;
      background-size: cover;
    background-position: center;
 }
 
 
-/* corrige a regra inválida e posiciona a imagem à direita */
 .foto-eu {
    position: absolute;
    right: 250px;
@@ -45,7 +43,6 @@ html, body {
 }
 
 
-/* em telas pequenas colocamos a imagem abaixo do conteúdo */
 @media (max-width: 700px){
   .foto-eu{
     position: static;
@@ -55,7 +52,7 @@ html, body {
     transform: none;
   }
 }
-/* ...existing code... */
+
 nav{
     box-shadow: inset 0 -2px 0 rgba(255, 255, 255, 0.1);
     display: flex;
@@ -163,11 +160,11 @@ a:hover {
     color:white;
 }
 
-#meus{  
+#projetos{  
     text-align: center;
     font-size: 75px;
 }
-#meus span{
+#projetos span{
     color: #00008B;
 }
 
@@ -217,6 +214,7 @@ a:hover {
     border-radius: 15px;
 }
 .projetos a{
+    background-color: #00008B;
     padding: 10px;
     border-radius: 20px;
     border:none;
@@ -233,7 +231,6 @@ a:hover {
 
 footer{
     padding-top: 100px;
-    padding-bottom: 100px;
     background-color: #181818;
     color:white;
     display: flex;
@@ -256,6 +253,10 @@ footer p{
     margin-top: 30px;
     margin-bottom: 20px;
 }
+footer h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
 .contato i {
     padding: 10px 10px;
     background-color: white;
@@ -270,11 +271,11 @@ footer p{
 .contato i:hover {
     background-color: #000000;
     color: white;
-    transition: 0.9s; 
+    transition: 0.7s; 
 }
 .direitos{
-    background-color: #00008B;
-    padding: 20px;
+    margin-top: 100px;
+    padding: 1px;
     text-align: center;
     width: 100%;
 }
