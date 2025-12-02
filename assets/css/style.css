@@ -1,7 +1,12 @@
+/* ================================================= */
+/* CONFIGURAÇÕES GLOBAIS E RESET */
+/* ================================================= */
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -9,9 +14,29 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-   
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #0000ca;
+    transition: 0.3s;
+}
+
+/* ================================================= */
+/* HOME (CAIXA PRINCIPAL) */
+/* ================================================= */
 
 .caixa-principal{
     height: 100vh;
@@ -19,38 +44,8 @@ html, body {
     background-color: #000000;
     position: relative;      
     padding: 40px;
-     background-size: cover;
-   background-position: center;
-}
-
-
-.foto-eu {
-   position: absolute;
-   right: 250px;
-   top: 55%;
-   transform: translateY(-50%);
-   border: solid 2px #9b9bee;
-   border-radius: 100%;
-  
-}
-
-.foto-eu img{
-   max-width: 100%;
-   width: 20vw;
-   height: auto;
-   border-radius: 8px;
-  
-}
-
-
-@media (max-width: 700px){
-  .foto-eu{
-    position: static;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    transform: none;
-  }
+    background-size: cover;
+    background-position: center;
 }
 
 nav{
@@ -66,31 +61,16 @@ nav{
     text-shadow: black 1px 1px 1px;
     font-size: 50px;
 }
+
 .Portfolio span{
     color:#00008B;
-}
-
-li{
-    list-style: none;
-    font-size: 25px;
-    display: inline-block;
-    margin-right: 30px;
-    cursor: pointer;
- 
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-a:hover {
-    color: #0000ca;
-    transition: 1.0s;
 }
 
 .cargo{
     position: absolute;
     top: 50%;
     left: 7%;
+    transform: translateY(-50%);
 }
 
 .cargo h1{
@@ -103,55 +83,104 @@ a:hover {
 }
 
 .cargo h3{
-    color: white;;
+    color: white;
+    font-size: 20px;
 }
 
+.foto-eu {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid 2px #9b9bee; /* Borda mantida para o ícone */
+    border-radius: 100%; /* Mantido para o ícone */
+}
+
+.foto-eu img{
+    max-width: 100%;
+    width: 20vw;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Adicionado object-fit por segurança */
+}
+
+/* ================================================= */
+/* SEÇÃO SOBRE MIM */
+/* ================================================= */
+
 .parte2{
-    position: relative;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: center; 
     color: white;
     background-color: #181818;
-   
+    padding: 80px 40px; 
+    gap: 50px;
 }
-.parte2 p{
-    padding: 100px 50px;
-    font-size: 20px;
+
+.imagem2-eu {
+    width: 550px; /* Largura do círculo */
+    height: 550px; /* Altura do círculo (Deve ser igual à largura) */
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o contêiner */
+    border-radius: 50%; /* Torna o contêiner circular */
+}
+
+/* Imagem dentro do contêiner */
+.parte2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ESSENCIAL: Garante que a imagem preencha o contêiner sem ser esticada, resolvendo o achatamento. */
+    border-radius: 0; /* Remove o border-radius da imagem em si */
+    max-width: none; /* Remove restrição de max-width que estava atrapalhando */
+}
+
+
+/* Container para texto e botão */
+.parte2 > div {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     text-align: center;
+}
+
+.parte2 h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.parte2 h2 span{
+    color: #00008B;
+}
+
+.parte2 p{
+    padding: 20px 0;
+    font-size: 20px;
     text-align: justify;
+}
+
+.parte2 a {
+    margin-top: 20px; 
 }
 
 .parte2 button{
     color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 20px; 
     font-size: 20px;
     background-color: #00008B;
     cursor:pointer;
-    position: absolute;
-    left: 60%;
     border: none;
     border: solid 2px #9b9bee;
 }
+
 .parte2 button:hover{
     background-color: #0e0e0e;
     transition: 0.3s;
-    
-}
-.parte2 img{
-    height: 800px;
-    padding: 80px 0px;
-    border-radius: 100%;
-   
 }
 
-.parte2 h2{
-    text-align: center;
-    font-size: 60px;
-}
-.parte2 h2 span{
-    color: #00008B;
-}
+/* ================================================= */
+/* SEÇÃO PROJETOS */
+/* ================================================= */
 
 .parte3{
     padding-top: 80px;
@@ -163,71 +192,64 @@ a:hover {
 #projetos{  
     text-align: center;
     font-size: 75px;
+    margin-bottom: 50px;
 }
 #projetos span{
     color: #00008B;
 }
 
-.FraseInvertida{
-    background-color: #181818;
-    height: 500px;
-    width: 300px;
-    border-radius: 20px;
-    padding: 20px 35px;
-    text-align: center;
-   
-}
-.FraseInvertida p{
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-.FraseInvertida h5{
-     font-size: 25px;
-}
-
-.SistemaEventosEstudantis{
-    background-color: #181818;
-    height: 500px;
-    width: 300px;
-    border-radius: 20px;
-    padding: 20px 35px;
-    text-align: center;
-   
-}
-.SistemaEventosEstudantis p{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    
-}
-.SistemaEventosEstudantis h5{
-    font-size: 25px;
-}
-
 .projetos{
-    padding-top: 50px;
     display: flex;
-    
-    justify-content:space-evenly;
+    justify-content: space-evenly;
+    gap: 30px; 
+    padding: 0 20px;
 }
+
+.FraseInvertida, .SistemaHospitalar, .SistemaEventosEstudantis{
+    background-color: #181818;
+    width: 300px; 
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.FraseInvertida h5, .SistemaHospitalar h5, .SistemaEventosEstudantis h5{
+     font-size: 25px;
+     margin-top: 10px;
+}
+.FraseInvertida p, .SistemaHospitalar p, .SistemaEventosEstudantis p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .projetos img{
-    height: 200px;
+    height: 150px; 
     border-radius: 15px;
+    width: 100%;
+    object-fit: contain;
 }
 .projetos a{
     background-color: #00008B;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
-    border:none;
-    cursor: pointer;
     border: solid 2px #9b9bee;
     font-size: 20px;
-
+    margin-top: auto; 
 }
 .projetos a:hover{
     background-color:#000000;
     transition: 0.3s;
     color: white; 
 }
+
+/* ================================================= */
+/* RODAPÉ (CONTATO) */
+/* ================================================= */
 
 footer{
     padding-top: 100px;
@@ -237,45 +259,197 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
+
+footer h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
 .contato{
     display:flex;
     gap:20px;
 }
 
-.contato i{
-    border-radius: 50%;
-}
-
-
-footer p{
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-footer h2{
-    font-size: 50px;
-    margin-bottom: 50px;
-}
 .contato i {
-    padding: 10px 10px;
+    padding: 15px; 
     background-color: white;
     border: solid 2px #9b9bee;  
     font-size: 30px;
     color: #00008B;
-    margin: 5px;
+    border-radius: 50%;
 }
-.contato .bx-envelope {
-    color: #00008B; 
-}
+
 .contato i:hover {
     background-color: #000000;
     color: white;
     transition: 0.7s; 
 }
+
 .direitos{
-    margin-top: 100px;
-    padding: 1px;
+    margin-top: 50px; 
+    padding: 15px;
     text-align: center;
     width: 100%;
+}
+footer p{
+    margin: 0;
+}
+
+/* ================================================= */
+/* MEDIA QUERIES (RESPONSIVIDADE) */
+/* ================================================= */
+
+/* Tablet e Mobile Landscape (Até 950px) */
+@media (max-width: 950px){
+    
+    .caixa-principal {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    li {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    .cargo {
+        left: 5%;
+    }
+
+    .foto-eu {
+        right: 5%;
+        border: none;
+    }
+
+    .foto-eu img {
+        width: 25vw;
+    }
+
+    /* Sobre Mim */
+    .imagem2-eu {
+        width: 350px; /* Redução para telas menores */
+        height: 350px;
+    }
+}
+
+
+/* Mobile (Até 768px) */
+@media (max-width: 768px){
+    /* Home */
+    .caixa-principal {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .cargo {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .cargo h1 {
+        font-size: 40px;
+    }
+
+    .cargo h3 {
+        font-size: 18px;
+    }
+
+    .foto-eu {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        transform: none;
+    }
+
+    .foto-eu img {
+        width: 50vw;
+        max-width: 200px;
+    }
+
+    /* Sobre Mim */
+    .parte2 {
+        flex-direction: column; /* Empilha o conteúdo */
+        padding: 50px 20px;
+        gap: 20px;
+    }
+
+    .imagem2-eu {
+        width: 250px; /* Tamanho para mobile */
+        height: 250px;
+        max-width: 60%;
+    }
+
+    .parte2 > div {
+        max-width: 100%; /* O texto ocupa a largura total */
+    }
+
+    .parte2 h2 {
+        font-size: 45px;
+    }
+
+    .parte2 p {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    /* Projetos */
+    #projetos {
+        font-size: 55px;
+    }
+
+    .projetos {
+        flex-direction: column; /* Empilha os cartões */
+        align-items: center; /* Centraliza os cartões */
+        padding: 0 10px;
+    }
+
+    .FraseInvertida, .SistemaHospitalar, .SistemaEventosEstudantis {
+        width: 100%; 
+        max-width: 350px; /* Limita o tamanho em telas muito largas */
+        height: auto;
+    }
+}
+
+/* Mobile Portrait (Até 480px) */
+@media (max-width: 480px) {
+    .Portfolio {
+        font-size: 35px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    li {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+    
+    /* Rodapé */
+    footer h2 {
+        font-size: 40px;
+    }
+    .contato i {
+        font-size: 25px;
+        padding: 10px;
+    }
+    .direitos p {
+        font-size: 12px;
+    }
 }
