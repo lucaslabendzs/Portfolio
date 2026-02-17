@@ -1,7 +1,11 @@
 ## 🌟 Portfolio - Lucas Labendzs
 Bem-vindo ao meu portfólio pessoal de desenvolvimento Front-End!
 
+<<<<<<< HEAD
 ### Acesse o portfólio online: https://lucaslabendzs.netlify.app/ 🔗
+=======
+🔗 **Acesse o portfólio online: https://lucaslabendzs.netlify.app/
+>>>>>>> a7ace958e84eb17c924d891b7214cb4b33fa178a
 
 -----
 
