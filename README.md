@@ -1,6 +1,7 @@
 ## 🌟 Portfolio - Lucas Labendzs
+Bem-vindo ao meu portfólio pessoal de desenvolvimento Front-End!
 
-Bem-vindo ao meu portfólio pessoal de desenvolvimento Front-End\!
+> 🔗 **Acesse o portfólio online: https://github.com/lucaslabendzs/Portfolio.git
 
 -----
 
@@ -20,7 +21,7 @@ Para visualizar o **site do portfólio** em sua máquina, siga os passos abaixo.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [INSERIR A URL DO SEU REPOSITÓRIO AQUI]
+    git clone https://github.com/lucaslabendzs/Portfolio.git
     ```
 2.  **Navegue até o diretório do projeto:**
     ```bash
