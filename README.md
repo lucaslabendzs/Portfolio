@@ -1,6 +1,7 @@
 ## 🌟 Portfolio - Lucas Labendzs
+Bem-vindo ao meu portfólio pessoal de desenvolvimento Front-End!
 
-Bem-vindo ao meu portfólio pessoal de desenvolvimento Front-End\!
+### Acesse o portfólio online: https://lucaslabendzs.netlify.app/ 🔗
 
 -----
 
@@ -20,12 +21,12 @@ Para visualizar o **site do portfólio** em sua máquina, siga os passos abaixo.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [INSERIR A URL DO SEU REPOSITÓRIO AQUI]
+    git clone https://github.com/lucaslabendzs/Portfolio.git
     ```
 2.  **Navegue até o diretório do projeto:**
     ```bash
-    cd portfolio/Portfolio-87480e1f79966620e246ab4bfc60fb7707314af7
-    ```
+    cd Portfolio
+    
 3.  **Abra o arquivo `index.html`** no seu navegador de preferência para visualizar a página principal.
 
 ### 📞 Contato

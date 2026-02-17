@@ -1,6 +1,4 @@
-/* ================================================= */
-/* CONFIGURAÇÕES GLOBAIS E RESET */
-/* ================================================= */
+
 
 html, body {
     height: 100%;
@@ -34,15 +32,12 @@ a:hover {
     transition: 0.3s;
 }
 
-/* ================================================= */
-/* HOME (CAIXA PRINCIPAL) */
-/* ================================================= */
-
 .caixa-principal{
     height: 100vh;
     width: 100%;
     background-color: #000000;
-    position: relative;      
+    position: sticky;
+    top: 0;      
     padding: 40px;
     background-size: cover;
     background-position: center;
@@ -104,9 +99,6 @@ nav{
     object-fit: cover; /* Adicionado object-fit por segurança */
 }
 
-/* ================================================= */
-/* SEÇÃO SOBRE MIM */
-/* ================================================= */
 
 .parte2{
     display: flex;
@@ -178,9 +170,7 @@ nav{
     transition: 0.3s;
 }
 
-/* ================================================= */
 /* SEÇÃO PROJETOS */
-/* ================================================= */
 
 .parte3{
     padding-top: 80px;
@@ -247,9 +237,7 @@ nav{
     color: white; 
 }
 
-/* ================================================= */
 /* RODAPÉ (CONTATO) */
-/* ================================================= */
 
 footer{
     padding-top: 100px;
@@ -296,9 +284,7 @@ footer p{
     margin: 0;
 }
 
-/* ================================================= */
 /* MEDIA QUERIES (RESPONSIVIDADE) */
-/* ================================================= */
 
 /* Tablet e Mobile Landscape (Até 950px) */
 @media (max-width: 950px){
