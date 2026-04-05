@@ -2,7 +2,7 @@
 Bem-vindo ao meu portfólio pessoal de desenvolvimento Front-End!
 
 
-🔗 Acesse o portfólio online: https://lucaslabendzs.netlify.app/
+🔗 Acesse o portfólio online: https://lucaslabendzs.github.io/Portfolio/
 
 ### 💻 Tecnologias Utilizadas
 
