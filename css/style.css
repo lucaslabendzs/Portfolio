@@ -47,7 +47,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    position: fixed; 
+    position: relative; 
     top: 0;         
     left: 0;        
     width: 100%;    
@@ -69,6 +69,8 @@ nav {
     color:#00008B;
 }
 
+
+
 .cargo{
     position: absolute;
     top: 50%;
@@ -83,6 +85,16 @@ nav {
 
 .cargo h1 span{
     color: #00008B;
+    
+    
+}
+#spanL{
+    font-size: 100px;
+    color: white;
+
+}
+#spanLL{
+    font-size: 100px;
 }
 
 .cargo h3{
@@ -100,6 +112,7 @@ nav {
 }
 
 .foto-eu img{
+    border:10px white;
     max-width: 100%;
     width: 20vw;
     height: auto;
