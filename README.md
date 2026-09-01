@@ -1,5 +1,5 @@
 ## 🌟 Portfolio - Lucas Labendzs
-Bem-vindo ao meu portfólio pessoal de desenvolvimento Front-End!
+Bem-vindo ao meu portfólio pessoal!
 
 
 🔗 Acesse o portfólio online: https://lucaslabendzs.github.io/Portfolio/
