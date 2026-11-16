@@ -9,14 +9,15 @@ Bem-vindo ao meu portfólio pessoal!
 Este portfólio foi construído com uma base robusta de tecnologias essenciais para o desenvolvimento web:
 
   * **HTML5:** Utilizado para a estrutura semântica e acessível de toda a página.
-  * **CSS3:** Responsável por todo o design, animações e layout responsivo. O projeto utiliza Sass para a manutenção e organização do código de estilo.
-  * **Boxicons:** Biblioteca de ícones externa, utilizada para os links de contato e navegação.
+  * **CSS3:** Responsável por todo o design e pelo layout responsivo (Grid, Flexbox e `clamp()`), com variáveis CSS para as cores.
+  * **JavaScript:** Apenas o necessário para abrir e fechar o menu no celular.
+  * **Google Fonts (Poppins)** e ícones em SVG embutidos no HTML.
 
 ### 🚀 Como Visualizar o Portfolio Localmente
 
 Para visualizar o **site do portfólio** em sua máquina, siga os passos abaixo.
 
-**Observação:** Os projetos individuais listados na seção "Meus Projetos" (que são em C) devem ser clonados e executados separadamente, conforme as instruções em seus respectivos repositórios no GitHub.
+**Observação:** Os projetos individuais listados na seção "Meus Projetos" (em C e PHP/MySQL) devem ser clonados e executados separadamente, conforme as instruções em seus respectivos repositórios no GitHub.
 
 1.  **Clone o repositório:**
     ```bash
