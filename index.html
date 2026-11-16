@@ -4,110 +4,266 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Lucas Labendzs</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="Portfólio de Lucas Labendzs, desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas."
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/png" href="img/computadorInicio.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div id="caixa-principal" class="caixa-principal">
-      <nav>
-        <h2 class="Portfolio">Portfo<span>lio</span></h2>
-          <ul>
-          <li><a href="#caixa-principal">Home</a></li>
+    <a class="pular" href="#sobre">Pular para o conteúdo</a>
+
+    <header class="topo">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="Portfolio" href="#inicio">Portfo<span>lio</span></a>
+
+        <button
+          class="nav-botao"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul id="menu" class="menu">
+          <li><a href="#inicio">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
-          </ul>
-           </nav>
-      <div class="cargo">
-        <h1><span id="spanL">L</span>ucas <span> <span id="spanLL">L</span>abendzs</span></h1>        <h3>Desenvolvedor de Software</h3>
-      </div>
-      <div class="foto-eu">
-        <img src="img/computadorInicio.png" alt="" />
-      </div>
-    </div>
+        </ul>
+      </nav>
+    </header>
 
-    <section id="sobre" class="parte2">
-      <div class="imagem2-eu">
-        <img src="img/eu2.png" alt="Foto minha" />
-      </div>
+    <main>
+      <section id="inicio" class="caixa-principal">
+        <div class="conteudo inicio-grade">
+          <div class="cargo">
+            <h1>
+              <span class="nome"><span class="inicial">L</span>ucas</span>
+              <span class="sobrenome"><span class="inicial">L</span>abendzs</span>
+            </h1>
+            <p class="funcao">Desenvolvedor de Software</p>
+            <div class="acoes">
+              <a class="botao" href="#projetos">Ver projetos</a>
+              <a class="botao botao-vazado" href="#contato">Entre em contato</a>
+            </div>
+          </div>
 
-      <div>
-       
-        <h2>Sobre <span>Mim</span></h2>
-        <p>
-         • Estudante de Análise e Desenvolvimento de Sistemas
-        </p>
-        <a href="#contato"><button>Entre em contato</button></a>
-      </div>
-    </section>
-
-    <section class="parte3">
-      <h2 id="projetos">Meus <span>Projetos</span></h2>
-      <div class="projetos">
-        <div class="FraseInvertida">
-          <img
-            src="img/FUNDOLogoFraseInvertidaa.png"
-            alt="Logo do jogo frase invertida"
-          />
-          <h5>Jogo da Frase Invertida</h5>
-          <p>
-             Simula um pequeno um jogo onde você deve acertar a maior quantidade de palavras possíveis digitando ao contrário com um sistema de login com PHP e MySQL.
-          </p>
-          <a
-            href="https://github.com/lucaslabendzs/GAME---Aditrevni-Esarf"
-            target="_blank"
-            >Ver Projeto</a
-          >
+          <div class="foto-eu">
+            <img
+              src="img/computadorInicio.png"
+              alt=""
+              width="500"
+              height="500"
+            />
+          </div>
         </div>
+      </section>
 
-        <div class="SistemaEventosEstudantis">
-          <img
-            src="img/FUNDOEventosEstudantiss.png"
-            alt="Logo do sistema de eventos estudantis"
-          />
-          <h5>Eventos Estudantis</h5>
-          <p>
-            Aplicação em linguagem C que utiliza listas encadeadas para armazenar, manipular e exibir dados de eventos e participantes.
-          </p>
-          <a
-            href="https://github.com/lucaslabendzs/Sistema_Eventos_Estudantis"
-            target="_blank"
-            >Ver Projeto</a
-          >
+      <section id="sobre" class="parte2">
+        <div class="conteudo sobre-grade">
+          <div class="imagem2-eu">
+            <img
+              src="img/eu2.png"
+              alt="Foto de Lucas Labendzs"
+              width="640"
+              height="640"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="sobre-texto">
+            <h2>Sobre <span>Mim</span></h2>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas.</p>
+            <p>
+              Desenvolvo projetos acadêmicos como os que estão logo abaixo,
+              usando estas tecnologias:
+            </p>
+            <ul class="tecnologias" aria-label="Tecnologias">
+              <li>C</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <a class="botao" href="#contato">Entre em contato</a>
+          </div>
         </div>
-        <div class="SistemaHospitalar">
-          <img
-            src="img/FFundoSistemaHospitalar.png"
-            alt="Logo do Sistema Hospitalar"
-          />
-          <h5>Sistema Atendimento Hospitalar</h5>
-          <p>
-            Aplicação simula um sistema de triagem e atendimento hospitalar baseado no Protocolo de Manchester, escrito em Linguagem C.
-          </p>
-          <a
-            href="https://github.com/lucaslabendzs/sistema-hospitalar"
-            target="_blank"
-            >Ver Projeto</a
-          >
+      </section>
+
+      <section id="projetos" class="parte3">
+        <div class="conteudo">
+          <h2>Meus <span>Projetos</span></h2>
+
+          <div class="projetos">
+            <article class="projeto">
+              <div class="projeto-logo">
+                <img
+                  src="img/FUNDOLogoFraseInvertidaa.png"
+                  alt="Logo do jogo frase invertida"
+                  width="1024"
+                  height="891"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Jogo da Frase Invertida</h3>
+              <p>
+                Simula um pequeno jogo onde você deve acertar a maior
+                quantidade de palavras possíveis digitando ao contrário, com
+                um sistema de login em PHP e MySQL.
+              </p>
+              <ul class="tecnologias" aria-label="Tecnologias do projeto">
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+              <a
+                class="botao"
+                href="https://github.com/lucaslabendzs/GAME---Aditrevni-Esarf"
+                target="_blank"
+                rel="noopener"
+                >Ver Projeto<span class="so-leitor">
+                  Jogo da Frase Invertida no GitHub</span
+                ></a
+              >
+            </article>
+
+            <article class="projeto">
+              <div class="projeto-logo">
+                <img
+                  src="img/FUNDOEventosEstudantiss.png"
+                  alt="Logo do sistema de eventos estudantis"
+                  width="1024"
+                  height="869"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Eventos Estudantis</h3>
+              <p>
+                Aplicação em linguagem C que utiliza listas encadeadas para
+                armazenar, manipular e exibir dados de eventos e
+                participantes.
+              </p>
+              <ul class="tecnologias" aria-label="Tecnologias do projeto">
+                <li>C</li>
+              </ul>
+              <a
+                class="botao"
+                href="https://github.com/lucaslabendzs/Sistema_Eventos_Estudantis"
+                target="_blank"
+                rel="noopener"
+                >Ver Projeto<span class="so-leitor">
+                  Eventos Estudantis no GitHub</span
+                ></a
+              >
+            </article>
+
+            <article class="projeto">
+              <div class="projeto-logo">
+                <img
+                  src="img/FFundoSistemaHospitalar.png"
+                  alt="Logo do Sistema Hospitalar"
+                  width="502"
+                  height="547"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Sistema Atendimento Hospitalar</h3>
+              <p>
+                Aplicação que simula um sistema de triagem e atendimento
+                hospitalar baseado no Protocolo de Manchester, escrita em
+                linguagem C.
+              </p>
+              <ul class="tecnologias" aria-label="Tecnologias do projeto">
+                <li>C</li>
+              </ul>
+              <a
+                class="botao"
+                href="https://github.com/lucaslabendzs/sistema-hospitalar"
+                target="_blank"
+                rel="noopener"
+                >Ver Projeto<span class="so-leitor">
+                  Sistema Atendimento Hospitalar no GitHub</span
+                ></a
+              >
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <footer id="contato">
-      <h2>Contatos</h2>
-      <div class="contato">
-        <a href="https://www.linkedin.com/in/lucaslabendzs/" target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="mailto:lucas.labendzs@gmail.com" target="_blank"
-          ><i class="bx bx-envelope"></i
-        ></a>
-      </div>
-      <div class="direitos">
-        <p>Copyright © 2026 by Lucas Labendzs. All rights reserved.</p>
+      <div class="conteudo">
+        <h2>Contatos</h2>
+        <p class="contato-frase">
+          Fico à disposição para conexões, oportunidades de trabalho e novas
+          ideias.
+        </p>
+        <div class="contato">
+          <a
+            href="https://www.linkedin.com/in/lucaslabendzs/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="5.2" cy="5.6" r="1.9" />
+              <rect x="3.6" y="9" width="3.2" height="10" />
+              <path
+                d="M9.6 9h3v1.4c.6-1 1.7-1.7 3.3-1.7 3 0 3.7 2 3.7 4.6V19h-3.2v-5c0-1.200-.1-2.500-1.600-2.500S12.800 12.600 12.800 14v5H9.6z"
+              /></svg
+          ></a>
+          <a
+            href="https://github.com/lucaslabendzs"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><svg viewBox="0 0 16 16" aria-hidden="true">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              /></svg
+          ></a>
+          <a href="mailto:lucas.labendzs@gmail.com" aria-label="E-mail"
+            ><svg viewBox="0 0 24 24" aria-hidden="true" class="icone-linha">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3.500 7l8.500 6.500L20.500 7" /></svg
+          ></a>
+        </div>
+        <div class="direitos">
+          <p>Copyright © 2026 by Lucas Labendzs. All rights reserved.</p>
+        </div>
       </div>
     </footer>
+
+    <script>
+      // Menu do celular: abre/fecha e fecha sozinho ao escolher um link.
+      const botao = document.querySelector(".nav-botao");
+      const menu = document.querySelector("#menu");
+
+      function definirMenu(aberto) {
+        menu.classList.toggle("aberto", aberto);
+        botao.setAttribute("aria-expanded", aberto);
+        botao.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+      }
+
+      botao.addEventListener("click", () =>
+        definirMenu(!menu.classList.contains("aberto"))
+      );
+      menu.addEventListener("click", (evento) => {
+        if (evento.target.closest("a")) definirMenu(false);
+      });
+      document.addEventListener("keydown", (evento) => {
+        if (evento.key === "Escape") definirMenu(false);
+      });
+    </script>
   </body>
 </html>
